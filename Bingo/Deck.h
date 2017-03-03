@@ -6,6 +6,7 @@
 #define BINGO_DECK_H
 
 #include <ostream>
+#include "Card.h"
 
 // TODO: Extend this definition as you see fit
 
@@ -17,6 +18,13 @@ public:
 
     void print(std::ostream& out) const;
     void print(std::ostream& out, int cardIndex) const;
+
+private:
+    unsigned int m_cardSize;
+    unsigned int m_cardCount;
+    unsigned int m_maxNum;
+    Card** m_cards;
+
 };
 
 #endif //BINGO_DECK_H

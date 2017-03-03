@@ -3,25 +3,47 @@
 //
 
 #include "Deck.h"
+#include "Card.h"
 
 Deck::Deck(int cardSize, int cardCount, int numberMax)
 {
-    // TODO: Implement
+    m_cardCount = cardCount;
+    m_cardSize = cardSize;
+    m_maxNum = numberMax;
+    m_cards = new Card*[m_cardCount];
+    for (int i = 0; i < m_cardCount; i++)
+    {
+        m_cards[i] = new Card(m_cardSize, m_maxNum);
+    }
+
 }
 
 Deck::~Deck()
 {
-    // TODO: Implement
+    for (int i = 0; i < m_cardCount; i++)
+    {
+        delete [] m_cards;
+    }
+    delete m_cards;
 }
 
 void Deck::print(std::ostream& out) const
 {
-    // TODO: Implement
+    for (int i = 0; i < m_cardCount; i++)
+    {
+        m_cards[i]->print(out);
+    }
 }
 
 void Deck::print(std::ostream& out, int cardIndex) const
 {
-    // TODO: Implement
+    unsigned int index = cardIndex - 1;
+    if (index < m_cardCount)
+    {
+    m_cards[index]->print(out);
+    }else{
+        out << "Out of bounds, There are only " << m_cardCount << " Cards in the deck." << std::endl;
+    }
 }
 
 
