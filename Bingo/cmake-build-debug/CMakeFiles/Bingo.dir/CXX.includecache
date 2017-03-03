@@ -7,11 +7,15 @@
 #IncludeRegexTransform: 
 
 C:/Users/Jake/Documents/GitHub/1440_HW04/Bingo/Card.cpp
+iomanip
+-
 Card.h
 C:/Users/Jake/Documents/GitHub/1440_HW04/Bingo/Card.h
 
 C:/Users/Jake/Documents/GitHub/1440_HW04/Bingo/Card.h
 ostream
+-
+algorithm
 -
 Cell.h
 C:/Users/Jake/Documents/GitHub/1440_HW04/Bingo/Cell.h
@@ -19,16 +23,18 @@ C:/Users/Jake/Documents/GitHub/1440_HW04/Bingo/Cell.h
 C:/Users/Jake/Documents/GitHub/1440_HW04/Bingo/Cell.cpp
 algorithm
 -
+vector
+-
 Cell.h
 C:/Users/Jake/Documents/GitHub/1440_HW04/Bingo/Cell.h
 
 C:/Users/Jake/Documents/GitHub/1440_HW04/Bingo/Cell.h
+vector
+-
 
 C:/Users/Jake/Documents/GitHub/1440_HW04/Bingo/Deck.cpp
 Deck.h
 C:/Users/Jake/Documents/GitHub/1440_HW04/Bingo/Deck.h
-Card.h
-C:/Users/Jake/Documents/GitHub/1440_HW04/Bingo/Card.h
 
 C:/Users/Jake/Documents/GitHub/1440_HW04/Bingo/Deck.h
 ostream

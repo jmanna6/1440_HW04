@@ -5,14 +5,17 @@
 #ifndef BINGO_CELL_H
 #define BINGO_CELL_H
 
+#include <vector>
 
 class Cell {
 public:
-    Cell(int maxNum);
+    Cell(int val);
     ~Cell();
 
     unsigned int getVal();
     void setVal(unsigned int nVal);
+    void setPotentialValues(int maxNum);
+
 
 private:
     unsigned int m_value;

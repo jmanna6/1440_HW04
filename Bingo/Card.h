@@ -6,6 +6,7 @@
 #define BINGO_CARD_H
 
 #include <ostream>
+#include <algorithm>
 
 #include "Cell.h"
 
@@ -15,11 +16,16 @@ public:
     ~Card();
 
     void print(std::ostream& out) const;
+    void setPotentialValues(int maxNum);
+
+    // Testing
+    void printPotVal();
 
 private:
     unsigned int m_size;
     unsigned int m_maxNum;
     unsigned int m_cellCount;
+    int* m_potentialValues = nullptr;
     Cell** m_cells;
 
 };

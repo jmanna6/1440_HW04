@@ -3,7 +3,6 @@
 //
 
 #include "Deck.h"
-#include "Card.h"
 
 Deck::Deck(int cardSize, int cardCount, int numberMax)
 {
@@ -31,8 +30,15 @@ void Deck::print(std::ostream& out) const
 {
     for (int i = 0; i < m_cardCount; i++)
     {
+        out << "Card #" << i + 1 << std::endl;
+        for (int j = 0; j < m_cardSize; j++)
+        {
+            out << "+----";
+        }
+        out << "+" << std::endl;
         m_cards[i]->print(out);
     }
+
 }
 
 void Deck::print(std::ostream& out, int cardIndex) const
