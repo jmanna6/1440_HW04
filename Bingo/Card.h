@@ -18,6 +18,7 @@ public:
     void print(std::ostream& out) const;
     void setPotentialValues(int maxNum);
 
+private:
     // Testing
     void printPotVal();
 

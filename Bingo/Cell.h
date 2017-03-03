@@ -13,15 +13,9 @@ public:
     ~Cell();
 
     unsigned int getVal();
-    void setVal(unsigned int nVal);
-    void setPotentialValues(int maxNum);
-
 
 private:
     unsigned int m_value;
-    int* m_potentialValues = nullptr;
-    int m_count = 0;
-
 };
 
 
